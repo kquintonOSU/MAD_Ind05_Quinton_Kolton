@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.73"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/myTextView2"
@@ -25,7 +26,8 @@
         app:layout_constraintBottom_toTopOf="@+id/myTextView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/myTextView"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/myTextView3"
@@ -35,5 +37,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myTextView2" />
+        app:layout_constraintTop_toBottomOf="@+id/myTextView2"
+        android:gravity="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

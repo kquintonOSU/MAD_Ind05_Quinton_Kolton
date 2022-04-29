@@ -17,6 +17,7 @@ class MyAdapter(val teamList: List<Team>) : RecyclerView.Adapter<MyAdapter.MyVie
         fun bindItem(team: Team) {
             binding.tvTeamName.text = team.name
             binding.textView2.text = team.nickName
+            binding.textView3.text = team.area
         }
 
         override fun onClick(p0: View?) {
@@ -25,6 +26,7 @@ class MyAdapter(val teamList: List<Team>) : RecyclerView.Adapter<MyAdapter.MyVie
                 val intent = Intent(context, MainActivity2::class.java)
                     .putExtra("name", binding.tvTeamName.text)
                     .putExtra("nickName", binding.textView2.text)
+                    .putExtra("area", binding.textView3.text)
                 context.startActivity(intent)
             }
         }
